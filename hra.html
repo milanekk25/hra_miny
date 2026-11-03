@@ -4,14 +4,38 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .pole
-        .info
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #pole{
+            display: grid;
+            grid-template-columns: repeat(5, 45px);
+            margin-top: 100px;
+            gap: 5px;
+        }
+        .jedno_pole {
+            color: aqua;
+            width: 45px;
+            height: 45px;
+
+        }
+        #info{
+            color: black;
+            font-size: 30px;
+            font-family: Calibri;
+        }
+
     </style>
 </head>
+
 <body>
 
 <div id="pole"></div>
-<div id="info"></div>
+<p id="info"></p>
+
+
 </body>
 
 <script src="hra.js"></script>
