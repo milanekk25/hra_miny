@@ -2,7 +2,6 @@ let miny = 0;
 let velikost = 5;
 let konec = false;
 let pole_s_minou = [];
-
 const pole = document.getElementById("pole")
 const infotext = document.getElementById("info")
 
@@ -39,11 +38,14 @@ for (let i = 0; i < velikost * velikost; i++){
 
 
 jedno_pole.onclick = function (){
+
+
      //vyhra / prohra
 
     if (konec === true){
         return;
     }
+
 
     if (pole_s_minou[i] === true){
         jedno_pole.textContent = "x";
@@ -53,12 +55,15 @@ jedno_pole.onclick = function (){
 
         } else {
 
+
         jedno_pole.textContent = "0";
         volnapole--;
 
+        jedno_pole.disabled = true;
+
+
         if (volnapole === 0 ){
             konec = true;
-
             if(velikost === 5){
                 velikost = 10;
                 miny = 0;
@@ -66,7 +71,7 @@ jedno_pole.onclick = function (){
                 setTimeout(mapa,2000);
 
                 } else {
-                infotext.textContent = "Vyhral jsi, VSECHNY obtiznosti!!!"
+                infotext.textContent = "Vyhral jsi VSECHNY obtiznosti!!!"
 
                     }
                 }
