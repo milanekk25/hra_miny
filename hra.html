@@ -7,15 +7,22 @@
         body{
             display: flex;
             align-items: center;
-            justify-content: center;
+            flex-direction: column;
             background-color: lightslategray;
         }
-        #pole{
+        .velikost5{
             display: grid;
             grid-template-columns: repeat(5, 45px);
             margin-top: 100px;
             gap: 5px;
         }
+        .velikost10{
+            display: grid;
+            grid-template-columns: repeat(10, 45px);
+            margin-top: 100px;
+            gap: 5px;
+        }
+
         .jedno_pole {
             color: darkslateblue;
             width: 45px;
