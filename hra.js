@@ -27,8 +27,12 @@ function odekryt(i){
             const   novy_radek = r + radek;
             const   novy_sloupec = s + sloupec;
 
+            // AI generated - cloude sonnet 5.5
             if(novy_radek >= 0 && novy_radek < velikost && novy_sloupec >= 0 && novy_sloupec <velikost){
                 const vedlejsi = novy_radek * velikost + novy_sloupec;
+            //
+
+
                 if (pole_s_minou[vedlejsi] === true){
                     miny_kolem++;
                 }
@@ -44,8 +48,10 @@ function odekryt(i){
                 const   novy_radek = r + radek;
                 const   novy_sloupec = s + sloupec;
 
+                // AI generated - cloude sonnet 5.5
                 if(novy_radek >= 0 && novy_radek < velikost && novy_sloupec >= 0 && novy_sloupec <velikost){
                     odekryt(novy_radek * velikost + novy_sloupec);
+                //
                 }
             }
         }
